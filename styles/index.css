@@ -30,7 +30,26 @@ header {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 10px 40px;
+  padding: 10px 120px;
+}
+
+.header-logo {
+  align-items: flex-end;
+  display: flex;
+}
+
+.header-logo img {
+  margin-right: 10px;
+  width: 140px;
+}
+
+.header-logo span {
+  color: #cbb4a9;
+  font-family: 'tomicaregular';
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 nav ul {
