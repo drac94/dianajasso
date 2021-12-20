@@ -365,6 +365,31 @@ nav ul li a {
   line-height: 30px;
   margin-right: 40px;
   padding: 120px;
+  position: relative;
+}
+
+.hero-left::before {
+  content: "";
+  border: 2px solid #c1b1e4;
+  width: 136px;
+  height: 136px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -68px;
+  left: 0;
+  z-index: -1;
+}
+
+.hero-left::after {
+  content: "";
+  border: 2px solid #c1b1e4;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  position: absolute;
+  top: -41px;
+  right: -41px;
+  z-index: -1;
 }
 
 .hero-right {
@@ -387,6 +412,18 @@ nav ul li a {
   padding: 40px 58px;
   display: inline-block;
   margin-bottom: 50px;
+  position: relative;
+}
+
+.portfolio-wrapper h2::after {
+  content: "";
+  border: 2px solid #c1b1e4;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  position: absolute;
+  top: 18px;
+  right: -35px;
 }
 
 .portfolio-wrapper-border {
