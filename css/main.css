@@ -11,12 +11,6 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -263,51 +257,88 @@ textarea {
   }
 }
 
+/*
+Custom styles
+*/
+
+@font-face {
+  font-family: "tomicabold";
+  src: url("../fonts/tomica-bold_thefontsmaster.com-webfont.woff2")
+      format("woff2"),
+    url("../fonts/tomica-bold_thefontsmaster.com-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tomicalight";
+  src: url("../fonts/tomica-light_thefontsmaster.com-webfont.woff2")
+      format("woff2"),
+    url("../fonts/tomica-light_thefontsmaster.com-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tomicaregular";
+  src: url("../fonts/tomica-regular_thefontsmaster.com-webfont.woff2")
+      format("woff2"),
+    url("../fonts/tomica-regular_thefontsmaster.com-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  background: rgb(67, 109, 191);
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 200;
+  background-color: #f3efe6;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+header {
   align-items: center;
-  min-height: 100vh;
-  overflow: hidden;
-  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 120px;
 }
 
-.container {
-  text-align: center;
-  max-width: 100%;
-  width: 624px;
-  border-radius: inherit;
-  padding: 1.25rem 1rem;
+.header-logo {
+  align-items: flex-end;
+  display: flex;
 }
 
-img {
-  width: 216px;
-  border-radius: 100%;
+.header-logo img {
+  margin-right: 10px;
+  width: 140px;
 }
 
-h1 {
-  color: rgb(255, 255, 255);
-  letter-spacing: -1.8px;
-  width: 100%;
-  font-size: 78px;
-  line-height: 1.5;
-  font-weight: 200;
-  margin: 15px 0;
+.header-logo span {
+  color: #cbb4a9;
+  font-family: "tomicaregular";
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
-p {
-  color: rgba(255, 255, 255, 0.56);
-  letter-spacing: -0.6px;
-  width: 100%;
-  font-size: 30px;
-  line-height: 1.75;
-  font-weight: 200;
-  margin: 15px 0;
+nav ul {
+  align-items: center;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+nav ul li.selected {
+  border-radius: 188px;
+  border: solid 1px #bab5db;
+  padding: 15px 9px;
+}
+
+nav ul li a {
+  color: #cbb4a9;
+  font-family: "tomicaregular";
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
