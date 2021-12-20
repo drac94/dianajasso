@@ -352,6 +352,10 @@ nav ul li a {
   margin-bottom: 255px;
 }
 
+.hero-wrapper img {
+  width: 600px;
+}
+
 .hero-left {
   align-items: center;
   background-color: #f1f0ea;
@@ -370,25 +374,27 @@ nav ul li a {
 
 .hero-left::before {
   content: "";
-  border: 2px solid #c1b1e4;
-  width: 136px;
-  height: 136px;
+  box-shadow: 0px 0px 0px 2px #c1b1e4, 0px 0px 0px 20px #f3efe6,
+    0px 0px 0px 22px #c1b1e4;
+  width: 96px;
+  height: 96px;
   border-radius: 50%;
   position: absolute;
-  bottom: -68px;
-  left: 0;
+  bottom: -48px;
+  left: 21px;
   z-index: -1;
 }
 
 .hero-left::after {
   content: "";
-  border: 2px solid #c1b1e4;
-  width: 82px;
-  height: 82px;
+  box-shadow: 0px 0px 0px 2px #c1b1e4, 0px 0px 0px 12px #f3efe6,
+    0px 0px 0px 14px #c1b1e4;
+  width: 58px;
+  height: 58px;
   border-radius: 50%;
   position: absolute;
-  top: -41px;
-  right: -41px;
+  top: -28px;
+  right: -28px;
   z-index: -1;
 }
 
