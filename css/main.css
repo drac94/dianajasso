@@ -291,13 +291,15 @@ Custom styles
 
 body {
   background-color: #f3efe6;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 header {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 10px 120px;
+  padding: 40px 120px;
 }
 
 .header-logo {
@@ -341,4 +343,71 @@ nav ul li a {
   font-size: 15px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+  margin-bottom: 255px;
+}
+
+.hero-left {
+  align-items: center;
+  background-color: #f1f0ea;
+  border: solid 1px #d3bdb2;
+  color: #bab5db;
+  display: flex;
+  flex-grow: 1;
+  font-family: "tomicabold";
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-right: 40px;
+  padding: 120px;
+}
+
+.hero-right {
+  padding-right: 20px;
+}
+
+.portfolio-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1420px;
+  position: relative;
+}
+
+.portfolio-wrapper h2 {
+  font-family: "tomicaregular";
+  font-size: 20px;
+  color: #cbb4a9;
+  border-radius: 188px;
+  border: solid 1px #d3bdb2;
+  padding: 40px 58px;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.portfolio-wrapper-border {
+  height: 556px;
+  border: 2px solid #d3bdb2;
+  border-radius: 278px;
+  position: absolute;
+  top: 253px;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+
+.portfolio-content {
+  padding: 0 158px;
+  position: relative;
+  z-index: 10;
+}
+
+.portfolio-wrapper img {
+  width: 323px;
+  height: 323px;
+  margin: 15px;
 }
