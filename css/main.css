@@ -411,3 +411,14 @@ nav ul li a {
   height: 323px;
   margin: 15px;
 }
+
+footer {
+  padding: 40px 120px;
+  text-align: center;
+}
+
+footer h3 {
+  font-family: "tomicaregular";
+  font-size: 20px;
+  color: #cbb4a9;
+}
