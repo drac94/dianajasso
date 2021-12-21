@@ -397,11 +397,15 @@ nav ul li a {
   display: flex;
   flex-grow: 1;
   font-family: "tomicabold";
-  font-size: 40px;
-  line-height: 30px;
   margin-right: 40px;
   padding: 120px;
   position: relative;
+}
+
+.hero-left h1 {
+  font-size: 80px;
+  margin: 0;
+  line-height: 90px;
 }
 
 .hero-left::before {
@@ -506,4 +510,57 @@ footer .social {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+/*
+HOME ANIMATION
+*/
+
+.slider-wrapper,
+.slide {
+  box-sizing: border-box;
+  height: 100px;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+}
+
+.slider-container {
+  position: relative;
+  bottom: 0%;
+}
+
+.slide {
+  padding: 0 10px;
+}
+
+@keyframes slidev {
+  0% {
+    bottom: 0;
+  }
+  30% {
+    bottom: 0;
+  }
+  33% {
+    bottom: 100%;
+  }
+  63% {
+    bottom: 100%;
+  }
+  66% {
+    bottom: 200%;
+  }
+  97% {
+    bottom: 200%;
+  }
+  100% {
+    right: 0;
+  }
+}
+.slider-container {
+  animation: slidev linear 15s infinite;
+}
+.slider-container:hover {
+  animation-play-state: paused;
 }
