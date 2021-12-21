@@ -289,6 +289,20 @@ Custom styles
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Forum-Regular";
+  src: url("../fonts/Forum-Regular.woff") format("woff"),
+    url("../fonts/Forum-Regular.woff2") format("woff2"),
+    url("../fonts/Forum-Regular.svg#Forum-Regular") format("svg"),
+    url("../fonts/Forum-Regular.eot"),
+    url("../fonts/Forum-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Forum-Regular.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   background-color: #f3efe6;
   max-width: 1920px;
@@ -425,6 +439,7 @@ nav ul li a {
   text-align: center;
   max-width: 1420px;
   position: relative;
+  margin-bottom: 50px;
 }
 
 .portfolio-wrapper h2 {
@@ -482,7 +497,7 @@ footer {
 }
 
 footer h3 {
-  font-family: "tomicaregular";
+  font-family: "Forum-Regular";
   font-size: 20px;
   color: #cbb4a9;
 }
