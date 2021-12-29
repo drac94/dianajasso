@@ -303,6 +303,20 @@ Custom styles
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Tangerine-Regular";
+  src: url("../fonts/Tangerine-Regular.woff") format("woff"),
+    url("../fonts/Tangerine-Regular.woff2") format("woff2"),
+    url("../fonts/Tangerine-Regular.svg#Tangerine-Regular") format("svg"),
+    url("../fonts/Tangerine-Regular.eot"),
+    url("../fonts/Tangerine-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Tangerine-Regular.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   background-color: #f3efe6;
   max-width: 1920px;
@@ -563,4 +577,58 @@ HOME ANIMATION
 }
 .slider-container:hover {
   animation-play-state: paused;
+}
+
+/* About Page */
+
+.about-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  width: 1068px;
+  margin: 12px auto;
+}
+
+.intro {
+  width: 467px;
+  height: 641px;
+  padding: 121px 53px 117px 53px;
+  background-color: #faf8f2;
+  display: inline-block;
+  margin-top: 80px;
+  z-index: 20;
+}
+
+.intro h1 {
+  font-family: "Tangerine-Regular";
+  text-align: right;
+}
+
+.intro h2 {
+  font-family: AbrilText;
+  font-size: 19px;
+  font-style: italic;
+  color: #808080;
+}
+
+.intro p {
+  font-family: "Forum-Regular";
+  font-size: 20px;
+  color: #808080;
+}
+
+.about-wrapper .picture {
+  display: inline-block;
+  margin-left: -60px;
+  z-index: 10;
+  text-align: center;
+  font-size: 26px;
+}
+
+.about-wrapper .picture img {
+  width: 548px;
+  height: 546px;
+}
+
+text {
+  fill: #b67d6e;
 }
