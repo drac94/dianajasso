@@ -304,13 +304,25 @@ Custom styles
 }
 
 @font-face {
-  font-family: "Tangerine-Regular";
-  src: url("../fonts/Tangerine-Regular.woff") format("woff"),
-    url("../fonts/Tangerine-Regular.woff2") format("woff2"),
-    url("../fonts/Tangerine-Regular.svg#Tangerine-Regular") format("svg"),
-    url("../fonts/Tangerine-Regular.eot"),
-    url("../fonts/Tangerine-Regular.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Tangerine-Regular.ttf") format("truetype");
+  font-family: "Tangerine";
+  src: url("../fonts/Tangerine.woff") format("woff"),
+    url("../fonts/Tangerine.woff2") format("woff2"),
+    url("../fonts/Tangerine.eot"),
+    url("../fonts/Tangerine.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Tangerine.otf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AbrilText";
+  src: url("../fonts/Abril_Text_Italic.woff") format("woff"),
+    url("../fonts/Abril_Text_Italic.woff2") format("woff2"),
+    url("../fonts/Abril_Text_Italic.eot"),
+    url("../fonts/Abril_Text_Italic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Abril_Text_Italic.otf") format("truetype");
 
   font-weight: normal;
   font-style: normal;
@@ -526,6 +538,16 @@ footer .social {
   justify-content: flex-end;
 }
 
+footer .social img {
+  padding: 4px 10px;
+  height: 20px;
+  border-right: 1px solid #c1b1e3;
+}
+
+footer .social a:last-child img {
+  border-right: none;
+}
+
 /*
 HOME ANIMATION
 */
@@ -583,12 +605,13 @@ HOME ANIMATION
 
 .about-wrapper {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   width: 1068px;
-  margin: 12px auto;
+  margin: 100px auto;
 }
 
 .intro {
+  box-sizing: border-box;
   width: 467px;
   height: 641px;
   padding: 121px 53px 117px 53px;
@@ -599,8 +622,10 @@ HOME ANIMATION
 }
 
 .intro h1 {
-  font-family: "Tangerine-Regular";
+  font-family: "Tangerine";
   text-align: right;
+  color: #808080;
+  font-size: 24px;
 }
 
 .intro h2 {
@@ -622,11 +647,38 @@ HOME ANIMATION
   z-index: 10;
   text-align: center;
   font-size: 26px;
+  position: relative;
 }
 
 .about-wrapper .picture img {
-  width: 548px;
-  height: 546px;
+  width: 495px;
+  height: 495px;
+  object-fit: cover;
+  border-top-right-radius: 200px;
+}
+
+.about-wrapper .picture::after {
+  content: "";
+  border: 1px solid #d3bdb2;
+  width: 377px;
+  height: 377px;
+  border-top-right-radius: 200px;
+  position: absolute;
+  top: -29px;
+  right: -29px;
+  z-index: 3;
+}
+
+.about-wrapper .picture::before {
+  content: "";
+  width: 211px;
+  height: 211px;
+  border-radius: 50%;
+  border: solid 1px #d3bdb2;
+  position: absolute;
+  top: -51px;
+  right: -51px;
+  z-index: 1;
 }
 
 text {
