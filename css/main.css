@@ -329,6 +329,19 @@ Custom styles
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Bosch";
+  src: url("../fonts/Bosch-Personal-Use.woff") format("woff"),
+    url("../fonts/Bosch-Personal-Use.woff2") format("woff2"),
+    url("../fonts/Bosch-Personal-Use.eot"),
+    url("../fonts/Bosch-Personal-Use.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Bosch-Personal-Use.otf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   background-color: #f3efe6;
   max-width: 1920px;
@@ -539,7 +552,7 @@ footer .social {
 }
 
 footer .social img {
-  padding: 4px 10px;
+  padding: 4px 12px;
   height: 20px;
   border-right: 1px solid #c1b1e3;
 }
@@ -607,7 +620,7 @@ HOME ANIMATION
   display: flex;
   justify-content: center;
   width: 1068px;
-  margin: 100px auto;
+  margin: 60px auto;
 }
 
 .intro {
@@ -683,4 +696,5 @@ HOME ANIMATION
 
 text {
   fill: #b67d6e;
+  font-family: "Bosch";
 }
