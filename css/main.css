@@ -477,7 +477,7 @@ nav ul li a {
   padding-right: 20px;
 }
 
-.portfolio-wrapper {
+.home-portfolio-wrapper {
   margin: 0 auto;
   text-align: center;
   max-width: 1420px;
@@ -485,7 +485,7 @@ nav ul li a {
   margin-bottom: 50px;
 }
 
-.portfolio-wrapper h2 {
+.home-portfolio-wrapper h2 {
   font-family: "tomicaregular";
   font-size: 20px;
   color: #cbb4a9;
@@ -497,7 +497,7 @@ nav ul li a {
   position: relative;
 }
 
-.portfolio-wrapper h2::after {
+.home-portfolio-wrapper h2::after {
   content: "";
   border: 2px solid #c1b1e4;
   width: 62px;
@@ -508,7 +508,7 @@ nav ul li a {
   right: -35px;
 }
 
-.portfolio-wrapper-border {
+.home-portfolio-wrapper-border {
   height: 556px;
   border: 2px solid #d3bdb2;
   border-radius: 278px;
@@ -519,13 +519,13 @@ nav ul li a {
   z-index: 5;
 }
 
-.portfolio-content {
+.home-portfolio-content {
   padding: 0 158px;
   position: relative;
   z-index: 10;
 }
 
-.portfolio-wrapper img {
+.home-portfolio-wrapper img {
   width: 323px;
   height: 323px;
   margin: 15px;
@@ -697,4 +697,79 @@ HOME ANIMATION
 text {
   fill: #b67d6e;
   font-family: "Bosch";
+}
+
+/* Portfolio Page */
+
+.portfolio-wrapper {
+  justify-content: center;
+  width: 1310px;
+  margin: 50px auto;
+}
+
+.portfolio-header {
+  display: flex;
+}
+
+.portfolio-description {
+  width: 346px;
+  display: flex;
+  align-items: flex-end;
+  font-family: "tomicaregular";
+  font-size: 15px;
+  text-align: left;
+  color: #cbb4a9;
+  word-break: break-word;
+  margin-right: 18px;
+}
+
+.portfolio-description p {
+  margin: 0;
+}
+
+.portfolio-main-image {
+  position: relative;
+}
+
+.portfolio-wrapper .portfolio-main-image img {
+  width: 964px;
+  height: 594px;
+  object-fit: cover;
+  border-top-left-radius: 200px;
+}
+
+.portfolio-wrapper .portfolio-main-image::after {
+  content: "";
+  border: 1px solid #d3bdb2;
+  width: 377px;
+  height: 377px;
+  border-top-left-radius: 200px;
+  position: absolute;
+  top: -29px;
+  left: -29px;
+  z-index: 3;
+}
+
+.portfolio-wrapper .portfolio-main-image::before {
+  content: "";
+  width: 211px;
+  height: 211px;
+  border-radius: 50%;
+  border: solid 1px #d3bdb2;
+  position: absolute;
+  top: -51px;
+  left: -51px;
+  z-index: 1;
+}
+
+.portfolio-images {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-images img {
+  width: 300;
+  height: 300px;
 }
