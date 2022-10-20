@@ -342,6 +342,10 @@ Custom styles
   font-display: swap;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f3efe6;
   max-width: 1920px;
