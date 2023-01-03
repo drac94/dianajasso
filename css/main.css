@@ -779,3 +779,17 @@ text {
   height: 300px;
   object-fit: cover;
 }
+
+/* Contact Page */
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 1068px;
+  margin: 60px auto;
+}
+
+.contact-wrapper form {
+  display: flex;
+  flex-direction: column;
+}
